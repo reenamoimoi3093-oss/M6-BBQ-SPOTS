@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="M6 BBQ SPOT in Longolongo, Tonga. Fresh BBQ chicken, lamb and mixed BBQ." />
+  <title>M6 BBQ SPOT | Longolongo, Tonga</title>
+  <style>
+    :root{
+      --bg:#0d0d0d;
+      --panel:#171717;
+      --gold:#d99a45;
+      --gold2:#f0bd70;
+      --text:#f7f3ed;
+      --muted:#c8c1b8;
+      --line:#2a2a2a;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    header{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter: blur(10px);
+      background:rgba(10,10,10,.9);
+      border-bottom:1px solid var(--line);
+    }
+    nav{
+      min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1px}
+    .brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:1px solid var(--gold)}
+    .navlinks{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+    .navlinks a:hover{color:var(--gold2)}
+    .hero{
+      min-height:78vh;
+      display:grid;
+      place-items:center;
+      background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.82)),
+        url('assets/m6-bbq-logo.png') center/cover no-repeat;
+      text-align:center;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-inner{max-width:850px;padding:70px 0}
+    .eyebrow{color:var(--gold2);font-weight:700;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+    h1{font-size:clamp(44px,9vw,92px);line-height:.95;margin:16px 0 20px;letter-spacing:2px}
+    .hero p{font-size:clamp(18px,2vw,24px);color:#eee;max-width:720px;margin:0 auto 30px}
+    .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+    .btn{
+      display:inline-block;padding:14px 22px;border-radius:999px;font-weight:800;
+      border:1px solid var(--gold);transition:.2s;
+    }
+    .btn-primary{background:var(--gold);color:#111}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:80px 0}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title h2{font-size:clamp(32px,5vw,52px);margin:0 0 10px}
+    .section-title p{color:var(--muted);margin:0}
+    .menu-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+    }
+    .card{
+      background:linear-gradient(180deg,#1a1a1a,#121212);
+      border:1px solid var(--line);border-radius:20px;padding:26px;
+      box-shadow:0 12px 40px rgba(0,0,0,.18);
+    }
+    .card h3{font-size:25px;margin:0 0 8px}
+    .price{font-size:38px;font-weight:900;color:var(--gold2);margin:12px 0}
+    .card p{color:var(--muted);margin:0}
+    .info{
+      display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch;
+    }
+    .info .card{padding:32px}
+    .label{font-size:13px;text-transform:uppercase;letter-spacing:2px;color:var(--gold2);font-weight:800}
+    .big{font-size:23px;font-weight:800;margin:6px 0 12px}
+    .contact-box{text-align:center;background:#111;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .phone{font-size:clamp(35px,6vw,65px);font-weight:900;color:var(--gold2);margin:10px 0 25px}
+    footer{padding:28px 0;text-align:center;color:#8f8a84;font-size:14px}
+    @media(max-width:760px){
+      .navlinks{display:none}
+      .menu-grid,.info{grid-template-columns:1fr}
+      section{padding:60px 0}
+      .hero{min-height:68vh}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">
+        <img src="assets/m6-bbq-logo.png" alt="M6 BBQ SPOT logo">
+        <span>M6 BBQ SPOT</span>
+      </a>
+      <div class="navlinks">
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="eyebrow">Longolongo • Tonga</div>
+      <h1>M6 BBQ SPOT</h1>
+      <p>Good food. Good company. Great BBQ. Fresh grilled chicken and lamb served right in Longolongo.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:8616588">Call 8616588</a>
+        <a class="btn" href="#menu">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+        <p>Fresh off the grill and made to satisfy.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="card">
+          <h3>BBQ Mix</h3>
+          <div class="price">T$15</div>
+          <p>A delicious BBQ mix for when you want a little bit of everything.</p>
+        </article>
+        <article class="card">
+          <h3>BBQ Chicken</h3>
+          <div class="price">T$10</div>
+          <p>Juicy grilled chicken with that smoky M6 BBQ flavour.</p>
+        </article>
+        <article class="card">
+          <h3>BBQ Lamb Only</h3>
+          <div class="price">T$18</div>
+          <p>Tender BBQ lamb grilled fresh and served hot.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="container">
+      <div class="section-title">
+        <h2>Come Visit Us</h2>
+        <p>Easy to find, easy to order, hard to resist.</p>
+      </div>
+      <div class="info">
+        <div class="card">
+          <div class="label">Location</div>
+          <div class="big">Longolongo</div>
+          <p>Facing the Police Station main gate.</p>
+        </div>
+        <div class="card">
+          <div class="label">Opening Hours</div>
+          <div class="big">Monday – Saturday</div>
+          <p>12:00 PM – 12:00 AM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-box" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Order or Contact Us</h2>
+        <p>Call us to place your order or ask what is fresh on the grill today.</p>
+      </div>
+      <div class="phone">8616588</div>
+      <a class="btn btn-primary" href="tel:8616588">Call M6 BBQ SPOT</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© 2026 M6 BBQ SPOT • Longolongo, Tonga • More Than Just BBQ</div>
+</footer>
+</body>
+</html>
